@@ -30,6 +30,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.11'
 }
 
 tasks.named('test') {
